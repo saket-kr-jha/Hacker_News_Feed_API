@@ -41,8 +41,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseAuthorization();
-
 // Use CORS policy
 app.UseCors("AllowAllOrigins");
 
@@ -50,3 +48,4 @@ app.MapControllers();
 
 app.Run();
 
+public partial class Program { }

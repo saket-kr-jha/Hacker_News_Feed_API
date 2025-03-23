@@ -4,6 +4,8 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+      <PreserveCompilationContext>true</PreserveCompilationContext>
+      <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
@@ -14,15 +16,6 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
   </ItemGroup>
-
-<PropertyGroup>
-    <PreserveCompilationContext>true</PreserveCompilationContext>
-</PropertyGroup>
-
-<PropertyGroup>
-    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-</PropertyGroup>
-
 
   <ItemGroup>
     <None Remove="BusinessServices\" />

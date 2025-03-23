@@ -140,21 +140,6 @@ public class ProgramTests : IClassFixture<WebApplicationFactory<Program>>
         Assert.NotNull(app);
     }
 
-    // Test Authorization Middleware
-    [Fact]
-    public void Authorization_Should_Be_Enabled()
-    {
-        // Arrange
-        var builder = WebApplication.CreateBuilder();
-
-        // Act
-        var app = builder.Build();
-        app.UseAuthorization();
-
-        // Assert
-        Assert.NotNull(app);
-    }
-
     // Integration Test: GetTopStories Endpoint
     [Fact]
     public async Task GetTopStories_Should_Return_Success()
